@@ -1,0 +1,44 @@
+baseURL = 'https://policy4people.org.au/'
+locale = 'en-us'
+title = "Policy 4 People"
+theme = 'castanet'
+
+# The theme supports menus with up to one submenu per menu item
+# The menu name must be "Main"
+# The menus are sorted based upon their identifier
+[[Menu.Main]]
+    name = "Our podcast: Why Can't They Just?"
+    identifier = "podcast"
+    url = "https://whycanttheyjust.com.au/"
+
+[params]
+site_theme = "grey"
+enable_jumbo = "true"
+disable_title_caps = "true"
+copyright_notice = "Copyright 2026 Policy 4 People"
+custom_css = ["css/custom.css"]
+
+  [params.author]
+    name = "Janaline Oh"
+    email = "janaline.oh@gmail.com"
+
+  # Social links can be given in full URL form or short form
+  # In the short form the theme will generate a relevant URL
+  [params.social]
+    facebook = "61576913427124"
+    instagram = "whycanttheyjust"
+    youtube = "@Whycanttheyjust"
+    patreon = "https://www.patreon.com/cw/Policy4People"
+
+# Google Analytics: this domain needs its own GA4 data stream.
+# Reusing whycanttheyjust.com.au's measurement ID would mix the two sites'
+# traffic together, so create a new stream and paste its G-XXXXXXX below.
+# [services.googleAnalytics]
+# ID = ""
+
+[markup.goldmark.renderer]
+    unsafe = true
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'

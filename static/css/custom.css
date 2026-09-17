@@ -1,0 +1,31 @@
+.episode-content {
+  max-width: 72ch;
+}
+
+body {
+  background-color: #652d91 !important;
+}
+
+.navbar {
+  background-color: #652d91 !important;
+}
+
+.navbar .social-links {
+  color: #fff !important;
+}
+
+.navbar .nav-item + .nav-item {
+  margin-left: 0.5rem;
+}
+
+.navbar .nav-link {
+  color: #fff !important;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 1rem;
+  padding: 0.25rem 0.75rem !important;
+}
+
+.navbar .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: #fff;
+}

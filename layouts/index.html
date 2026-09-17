@@ -1,0 +1,18 @@
+{{ define "main" }}
+
+<div class="container-fluid grid_container">
+  <div class="jumbotron">
+    <div class="row">
+      <div class="col">
+        {{ .Content }}
+      </div>
+      {{ with .Params.org_image }}
+      <div class="col-lg-3">
+        <img alt="{{ $.Site.Title }}" src="{{ . | absURL }}" class="img-fluid">
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
+
+{{ end }}
