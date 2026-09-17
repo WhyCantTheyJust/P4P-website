@@ -15,4 +15,17 @@
   </div>
 </div>
 
+{{/* Front page blocks, one per file in content/home/, ordered by weight.
+     Add or edit content there — this layout should not need changing. */}}
+{{ with site.GetPage "/home" }}
+  {{ range .RegularPages.ByWeight }}
+  <div class="row home_section">
+    <div class="col">
+      {{ with .Title }}<h2>{{ . }}</h2>{{ end }}
+      {{ .Content }}
+    </div>
+  </div>
+  {{ end }}
+{{ end }}
+
 {{ end }}
