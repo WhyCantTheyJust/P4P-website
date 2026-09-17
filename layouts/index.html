@@ -19,7 +19,7 @@
      Add or edit content there — this layout should not need changing. */}}
 {{ with site.GetPage "/home" }}
   {{ range .RegularPages.ByWeight }}
-  <div class="row home_section">
+  <div class="row home_section{{ if .Params.featured }} featured{{ end }}">
     <div class="col">
       {{ with .Title }}<h2>{{ . }}</h2>{{ end }}
       {{ .Content }}

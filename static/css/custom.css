@@ -11,6 +11,34 @@
   max-width: 72ch;
 }
 
+/* Add `featured = true` to a block's front matter for this treatment:
+   narrower, centred on the page, sitting on a tinted panel. */
+.home_section.featured .col {
+  max-width: 62ch;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+  background-color: #f6f3fa;
+  border-top: 4px solid #652d91;
+  border-radius: 0.4rem;
+}
+
+.home_section.featured h2 {
+  text-align: center;
+  color: #652d91;
+  margin-bottom: 1.25rem;
+}
+
+/* The three pillars read better as headings than as list terms */
+.home_section.featured dt {
+  color: #652d91;
+  font-weight: 700;
+}
+
+.home_section.featured dd + dt {
+  margin-top: 1rem;
+}
+
 body {
   background-color: #652d91 !important;
 }
